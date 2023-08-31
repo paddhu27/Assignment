@@ -5,26 +5,26 @@ function TopSection() {
     <Box
       style={{
         width: '70%',
-        margin: '100px auto',
-        padding: '20px',
-        background:"transparent"
+        margin:"10px auto 20px auto",
+        background:"transparent",
+        border:"2px solid blank"
       }}
     >
       <Grid container alignItems="center" spacing={2}>
-        <Grid item xs={2}>
-          <Avatar alt="LOGO" src={logo}  style={{width:"100px", height:"100px"}}/>
+      <Grid item xs={2} style={{display:"flex", alignItems:"center", justifyContent:"center"}}>
+          <Avatar alt="LOGO" src={logo}  style={{width:"100px", height:"100px" ,padding:'0', margin:'0'}}/>
         </Grid>
         <Grid item>
           <Typography variant="h4">|</Typography>
         </Grid>
         <Grid item xs={7}>
-          <Typography variant="h4">Weekly Governance Votes</Typography>
+        <Typography style={{fontSize:"2rem"}}>Weekly Governance Votes</Typography>
         </Grid>
         <Grid item>
           <Typography variant="h4">|</Typography>
         </Grid>
         <Grid item xs={2}>
-          <Typography variant="h6">14-20/June</Typography>
+        <Typography style={{fontSize:"1.5rem"}}>14-20/June</Typography>
         </Grid>
       </Grid>
     </Box>

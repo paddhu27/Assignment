@@ -2,27 +2,27 @@ import { Grid, Typography } from '@mui/material';
 
 function Text({ item }) {
   return (
-    <Grid container alignItems="center" spacing={2} style={{margin:"10px auto"}}>
+    <Grid container alignItems="center" spacing={1} style={{margin:"0px auto"}}>
       <Grid item xs={2}>
-        <Typography variant="h6" style={{ wordWrap: 'break-word', maxWidth: '50px' }}>
+        <Typography variant="h6" style={{ wordWrap: 'break-word', maxWidth: '50px' , fontSize:'10px', margin:0, padding:0}}>
           #{item.number}
         </Typography>
       </Grid>
       <Grid item xs={1}>
-        <Typography variant="h6">|</Typography>
+        <Typography variant="h6" style={{margin:0,padding:0}}>|</Typography>
       </Grid>
       <Grid item xs={6}>
-        <Typography variant="h6" style={{ wordWrap: 'break-word', maxWidth: '250px' }}>
+        <Typography style={{ wordWrap: 'break-word', width: '240px',fontSize:'15px',margin:0,padding:0 }}>
           {item.text}
         </Typography>
       </Grid>
       <Grid item xs={1}>
-        <Typography variant="h6">|</Typography>
+        <Typography variant="h6" style={{margin:0,padding:0}}>|</Typography>
       </Grid>
       <Grid item xs={2}>
         <Typography 
           variant="h6" 
-          style={{ color: item.yesNo === "YES" ? "green" : "red", wordWrap: 'break-word', maxWidth: '50px' }}
+          style={{ color: item.yesNo === "YES" ? "green" : "red", wordWrap: 'break-word', maxWidth: '50px', fontSize: '15px', margin: 0, padding: 0 }}
         >
           {item.yesNo}
         </Typography>
