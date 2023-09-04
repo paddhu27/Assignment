@@ -1,4 +1,4 @@
-import { Box, Typography, Avatar, Grid } from '@mui/material';
+import {Box, Typography, Avatar, Grid } from '@mui/material';
 import logo from '../assessts/g3z57SXv_400x400.jpg'
 function TopSection() {
   return (

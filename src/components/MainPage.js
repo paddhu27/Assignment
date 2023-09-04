@@ -1,10 +1,13 @@
 import TopSection from "./TopSection";
 import CardList from "./CardList";
-import ScreenshotButton from "./ScreenShotbtn";
+import BasicButtons from "./ButtonGrid";
+import DateSelector from "./Buttonfirst";
 function MainPage({cardData }) {
     return (
       <div>
-        <ScreenshotButton/>
+        
+        <DateSelector/>
+        <BasicButtons/>
         <TopSection />
         <CardList data={cardData} />
       </div>
