@@ -17,7 +17,7 @@ function TopSection() {
         <Grid item>
           <Typography variant="h4">|</Typography>
         </Grid>
-        <Grid item xs={7}>
+        <Grid item xs={5}>
         <Typography style={{fontSize:"2rem"}}>Weekly Governance Votes</Typography>
         </Grid>
         <Grid item>
